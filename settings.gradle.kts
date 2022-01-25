@@ -9,3 +9,15 @@
 
 rootProject.name = "gradle-demo-repo"
 include("app")
+
+
+pluginManagement {
+    repositories {
+        mavenLocal()
+        gradlePluginPortal()
+    }
+}
+
+plugins {
+    id("org.gradle.github.dependency.extractor").version("0.0.1")    
+}
